@@ -1,0 +1,184 @@
+<!-- this is the html to the hangman game -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href="assets/javascript/game.js" rel="javascript">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+    <!-- this is the header for the game that'll say something like "hang-man/ sushi edition" -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #555555">
+            <a id="nav" class="navbar-brand d-flex align-self-start" href="index.html">
+                <img src="assets/images/sushi_titul.gif" width="75" height="75" class="d-inline-block align-center" alt="">
+                <strong>Hangman...
+                    <br> Sushi edition</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="links" class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <!-- for when i have active windows, use "active" after the nav-link; also put this at the end,<span class="sr-only">(current)</span> -->
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active">
+                        <a class="nav-link" style="color: #999999" href="history.html">History of sushi</a>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- this is the body that contains a sushi related picture as the background -->
+
+    <body>
+        <!-- this is the main section where all the magic will happen -->
+
+        <div class="card">
+            <img class="card-img-top" src="assets/images/historyOfSushi.webp" width="800" height="400" alt="History">
+            <div class="card-body">
+                <div class="conatainer">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <nav id="navbar-example3" class="navbar navbar-light">
+                                <a class="navbar-brand" href="https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/History_of_sushi.html">History of sushi</a>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="historyLink" class="nav-link" href="#item-1">Early History</a>
+                                    <a class="historyLink" class="nav-link" href="#item-2">Sushi in Japan</a>
+                                    <nav class="nav nav-pills flex-column">
+                                        <a class="historyLink" class="nav-link ml-3 my-1" href="#item-2-1">Funazushi</a>
+                                        <a class="historyLink" class="nav-link ml-3 my-1" href="#item-2-2">Makizushi</a>
+                                    </nav>
+                                </nav>
+                            </nav>
+                        </div>
+
+                        <div class="col-sm-10">
+                            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                                <h4 id="item-1" class="active">Early History</h4>
+                                <p class="infoText">The original type of sushi was first developed in Southeast Asia and spread to south China
+                                    before being introduced to Japan sometime around the 8th century.[1][2] Fish was salted
+                                    and wrapped in fermented rice, a traditional lacto-fermented rice dish. Narezushi was
+                                    made of this gutted fish which was stored in fermented rice for months at a time for
+                                    preservation. The fermentation of the rice prevented the fish from spoiling.[3] The fermented
+                                    rice was discarded and fish was the only part consumed. This early type of sushi became
+                                    an important source of protein for the Japanese. The Japanese preferred to eat fish with
+                                    rice, known as namanare or namanari (生成, なまなれ, なまなり, semi-fermented). During the Muromachi
+                                    period namanare was the most popular type of sushi. Namanare was partly raw fish wrapped
+                                    in rice, consumed fresh, before it changed flavor. This new way of consuming fish was
+                                    no longer a form of preservation but rather a new dish in Japanese cuisine. During the
+                                    Edo period, a third type of sushi was introduced, haya-zushi (早寿司, 早ずし, fast sushi).
+                                    Haya-zushi was assembled so that both rice and fish could be consumed at the same time,
+                                    and the dish became unique to Japanese culture. It was the first time that rice was not
+                                    being used for fermentation. Rice was now mixed with vinegar, with fish, vegetables and
+                                    dried food stuff added. This type of sushi is still very popular today. Each region utilizes
+                                    local flavors to produce a variety of sushi that has been passed down for many generations.
+                                    When Tokyo was still known as Edo in the early 19th century, mobile food stalls run by
+                                    street vendors became popular. During this period nigiri sushi (握り寿司) was introduced,
+                                    consisting of an oblong mound of rice with a slice of fish draped over it. After the
+                                    Great Kanto earthquake in 1923, nigiri sushi chefs were displaced from Edo throughout
+                                    Japan, popularizing the dish throughout the country. Today the sushi dish internationally
+                                    known as "sushi" (nigiri zushi; Kantō variety) is a fast food invented by Hanaya Yohei
+                                    (華屋与兵衛; 1799–1858) in today's Tokyo (Edo). People in Tokyo were living in haste even
+                                    a hundred years ago. The nigiri zushi invented by Hanaya was not fermented and could
+                                    be eaten using the fingers or chopsticks. It was an early form of fast food that could
+                                    be eaten in public or in the theater.
+                                </p>
+                                <h4 id="item-2">Sushi in Japan</h4>
+                                <p class="infoText">The earliest reference to sushi in Japan appeared in 718 in the Yōrō Code (養老律令 Yōrō-ritsuryō).
+                                    As an example of tax paid by actual items, it is written down as "雑鮨五斗 (about 64 liters
+                                    of zakonosushi or zatsunosushi?)". However, there is no way to know what this "sushi"
+                                    was or even how it was pronounced. By the 9th and 10th century "鮨" and "鮓" are read as
+                                    "sushi". This "sushi" was similar to today's Narezushi. For almost the next 800 years,
+                                    until the early 19th century, sushi slowly changed and the Japanese cuisine changed as
+                                    well. The Japanese started eating three meals a day, rice was boiled instead of steamed,
+                                    and of large importance, was the development of rice vinegar.[4] While sushi continued
+                                    to be produced by fermentation of fish with rice, the addition of rice vinegar greatly
+                                    reduced the time of fermentation[5] and the rice used began to be eaten along with the
+                                    fish. In the Muromachi Period (1336 to 1573), the process of producing Oshizushi was
+                                    gradually developed where in the fermentation process was abandoned and vinegar was used.
+                                    In the Azuchi-Momoyama period (1573–1603), namanare was invented. A 1603 Japanese-Portuguese
+                                    dictionary has an entry for namanrina sushi, literally half-made sushi. The namanare
+                                    was fermented for a shorter period than the narezushi and possibly marinated with rice
+                                    vinegar. It still had the distinctive smell of narezushi. The smell of narezushi was
+                                    likely one of the reasons for shortening and eventually skipping the fermentation process.
+                                    It is commonly described as "a cross between blue cheese, fish, and rice vinegar".[5]
+                                    A story from Konjaku Monogatarishū written in early 12th century makes it clear that
+                                    it was not an attractive smell, even if it tasted good: In the early 18th century, oshizushi
+                                    was perfected in Osaka and it came to Edo by the middle of 18th century. These sushi
+                                    were sold to customers, but because they still required a little fermentation time, stores
+                                    hung a notice and posters to customers on when to come for a sushi. Sushi was also sold
+                                    near a park during a hanami period and a theater as a type of Bento. Inarizushi was sold
+                                    along oshizushi. Makizushi and Chirashizushi also became popular in Edo period. There
+                                    were three famous sushi restaurants in Edo, Matsunozushi (松之鮨), Yoheizushi (興兵衛鮓), and
+                                    Kenukizushi (けぬき寿し) but there were thousands more sushi restaurants. They were established
+                                    in a span of barely twenty years at the start of the 19th century. Nigirizushi was an
+                                    instant hit and it spread through Edo like wildfire. In the book Morisadamanko (守貞謾稿)
+                                    published in 1852, the author writes that for a cho (100 meters by 100 meters or 10,000
+                                    square meters) section of Edo there were one or two sushi restaurants, but that only
+                                    one soba restaurant could be found in 1 or 2 cho. This means that there were nearly 2
+                                    sushi restaurants for every soba restaurant. These early nigirizushi were not identical
+                                    to today's varieties. Fish meat was marinated in soy sauce or vinegar or heavily salted
+                                    so there was no need to dip into soy sauce. Some fish was cooked before it was put onto
+                                    a sushi. This was partly out of necessity as there were no refrigerators. Each piece
+                                    was also larger, almost the size of two pieces of today's sushi. The advent of modern
+                                    refrigeration allowed sushi made of raw fish to reach more consumers than ever before.
+                                    The late 20th century saw sushi gaining in popularity all over the world.</p>
+                                <h5 id="item-2-1">Funazushi</h5>
+                                <p class="infoText">Funazushi is a rare type of narezushi still prepared near Lake Biwa, Shiga Prefecture.[6]
+                                    Eighteen generations of the Kitamura family have been preparing the dish at Kitashina
+                                    since 1619.[7] Fresh funa are scaled and gutted through their gills keeping the body
+                                    (and always the roe) of the fish intact. The fish are then packed with salt and aged
+                                    for a year before being repacked annually in rice for up to four years. The resulting
+                                    fermented dish may be served sliced thin or used as an ingredient in other dishes.[8]
+                                    Authentic funazushi is made from a wild subspecies of goldfish called nigorobuna (Carassius
+                                    auratus grandoculis) endemic to the lake. It is actually technically misleading to say
+                                    that "crucian carp" is used, as though any old funa type carp in the genus may be randomly
+                                    used (or the European species may be used), especially since the true crucian carp is
+                                    a distinct species altogether, C. carassius, and is not indigenous to Lake Biwa.[9] However,
+                                    due to reduced catch of nigorobuna in recent years, it is true that, by necessity, certain
+                                    other native species are starting to be substituted.</p>
+                                <h5 id="item-2-2">Makizushi</h5>
+                                <p class="infoText">After the invention of the sheet form of nori seaweed around 1750, makizushi or norimaki,
+                                    rice and various ingredients rolled with nori appeared.[10][11] The term makizushi was
+                                    first used in a book Ryōri Sankaikyō (料理山海郷, 1749). However this dish is not current
+                                    day makizushi but seafood rolled with bamboo mat (makisu). [12][13][14] Current day makizushi
+                                    first appeared in a book Shinsen Kondate buruishū (新撰献立部類集, 1776) which describes makizushi
+                                    as "Place a sheet of asakusa-nori, pufferfish or paper on the makisu and spread the cooked
+                                    rice then arrange fishes on it. Roll the makisu tightly from one side ..."[12][13][15][16]
+                                    In 1778, a food shop guide book Shichijyūgonichi (七十五日, 1778) listed a shop whose famous
+                                    menu is "norimaki-zushi".[15] A later book Meihan Burui (名飯部類, 1802) describes makizushi
+                                    as "Spread asakusa-nori on the board, place the sushi rice on it. Ingredients are sea
+                                    bream, abalone, shiitake, mitsuba and shiso. Roll them firmly...."[17][11][13]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <!-- this is the footer that says copyrighted but we all know its now lol -->
+    <footer class="d-flex justify-content-center">
+        &copy;Copyrighted
+    </footer>
+
+
+</html>

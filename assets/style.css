@@ -1,0 +1,92 @@
+* {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: #999999
+}
+
+/* for some reason this didnt come out the way I expected so I used inline styling, sorry ;p */
+/* .nav-link {
+    color: #999999;
+} */
+
+a:hover {
+    color: black;
+}
+
+strong {
+    font-size: 35px;
+}
+
+body {
+    background-image: url('images/background.jpg');
+}
+
+.jumbotron {
+    background-color: #555555;
+    color: #999999;
+    height: 600px;
+    width: 80%;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #555555;
+    color: #999999;
+    text-align: center;
+}
+
+#nav {
+    width: 300px
+}
+
+#topRow {
+    margin-bottom: 2rem;
+}
+.row {
+    margin-bottom: 2rem;
+}
+
+/* history page specific css */
+
+.card {
+    width: 80%;
+    width: 80%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    margin: 50px 0;
+    overflow-y: scroll;
+}
+
+.card-body {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.historyLink {
+    color: #999999cc
+}
+
+.infoText {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#navbar-example3 {
+    background-color: #555555;
+}
+
+
+
+@media screen and (max-width: 575px) {
+    .jumbotron-fluid {
+        height: 950px;
+        margin: 50px 0;
+        position: relative;
+    }
+}
