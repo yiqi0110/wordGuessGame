@@ -40,7 +40,7 @@
     </header>
     <!-- this is the body that contains a sushi related picture as the background -->
 
-    <body>
+    <body onload="startUp()">
         <!-- this is the main section where all the magic will happen -->
 
         <div id="game" class="jumbotron jumbotron-fluid">
@@ -61,8 +61,7 @@
                             </span>
                         </div>
                         <div class="row">
-                            <label aria-placeholder="_" for="input 1">_</label>
-                            <span name="_placeholders"></span>
+                            <span id="_placeholders"></span>
                         </div>
                         <div class="row">
                             Number of guesses remaining:<p id="remaining"> </p>
